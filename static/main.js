@@ -1,34 +1,22 @@
-// Function expression to select elements `
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
 
-const selectElement = (s) => document.querySelector(s);
-const navLinks = document.querySelectorAll(".nav-link");
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
 
-selectElement(".burger-menu-icon").addEventListener("click", () => {
-    selectElement(".nav-list").classList.toggle("active");
-    selectElement(".burger-menu-icon").classList.toggle("toggle")
+// Open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
 
-    navLinks.forEach((link, index) => {
-        if (link.style.animation){
-            link.style.animation = ""
-        }else{
-            link.style.animation = `navLinkAnimate 0.5s ease forwards ${ index/7 + 0.5}s`
-            console.log(index/7 + 0.5)
-        }
-    })
-});
-
-navLinks.forEach(link => {
-    link.addEventListener("click", () => {
-        selectElement(".nav-list").classList.toggle("active");
-        selectElement(".burger-menu-icon").classList.toggle("toggle");
-
-        navLinks.forEach((link, index) => {
-            if (link.style.animation){
-                link.style.animation = ""
-            }else{
-                link.style.animation = `navLinkAnimate 0.5s ease forwards ${ index/7 + 0.5}s`
-                console.log(index/7 + 0.5)
-            }
-        })
-    })
-})
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}

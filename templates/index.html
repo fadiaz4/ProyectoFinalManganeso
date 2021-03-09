@@ -1,244 +1,200 @@
 <!DOCTYPE html>
 <html>
+<title>Hibiscus El Salvador</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+<body class="w3-content" style="max-width:1200px">
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Fátima Díaz | Bussines & Engineering Student</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" type="text/css" media="screen" href="/static/main.css" />
-  <script src="https://kit.fontawesome.com/836a943e18.js" crossorigin="anonymous"></script>
-  <link rel="shortcut icon" type="image/x-icon" href="/static/images/favicon.ico" />
-</head>
-
-<body>
-
-  <header>
-    <div class="container">
-      <nav>
-        <div class="nav-brand">
-          <a href="index.html">
-            <img src="/static/images/logo.png" alt="Fátima Díaz" />
-          </a>
-        </div>
-        <div class="burger-menu-icon">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a href="#landing-page">
-              <img src="/static/images/profile-pic.jpg" alt="Bussines & Engineering" class="profile-pic nav-link" />
-              <span class="caption nav-link">| Third Year Student</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#about" class="nav-link">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="#services" class="nav-link">Studies</a>
-          </li>
-          <li class="nav-item">
-            <a href="#projects" class="nav-link">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact" class="nav-link">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" target="_blank" class="nav-link">
-              <i class="fab fa-youtube"></i>
-            </a>
-            <a href="#" target="_blank" class="nav-link">
-              <i class="fab fa-dev"></i>
-            </a>
-            <a href="#" target="_blank" class="nav-link">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-        </ul>
-      </nav>
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h3 class="w3-wide"><b>LOGO</b></h3>
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a href="#" class="w3-bar-item w3-button">Nosotros</a>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="SMWBT">
+      Swimmwear <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Small</a>
+      <a href="#" class="w3-bar-item w3-button">Medium</a>
+      <a href="#" class="w3-bar-item w3-button">Large</a>
     </div>
+    <a href="#" class="w3-bar-item w3-button">Otros</a>
+  </div>
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contáctanos</a> 
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Suscríbete</a> 
+</nav>
+
+<!-- Menú de arriba en pantallas pequeñas -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Abriendo la sidebar en pantallas pequeñas-->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Contenido de la página -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Lanzar contenido en pantallas pequeñas -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Encabezado superior -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">Jeans</p>
+    <p class="w3-right">
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p>
   </header>
 
-  <main>
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <img src="/w3images/jeans.jpg" alt="Jeans" style="width:100%">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+      <h1 class="w3-jumbo w3-hide-small">New arrivals</h1>
+      <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
+      <h1 class="w3-hide-small">COLLECTION 2016</h1>
+      <p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">SHOP NOW</a></p>
+    </div>
+  </div>
 
-    <section id="landing-page" class="landing-page">
-      <div class="container">
-        <div class="main-message">
-          <h2>FÁTIMA DÍAZ</h2>
-          <h3>{Bussines & Engineering Student}</h3>
-          <p>HTML . CSS . JavaScript . Python . MySQL</p>
-          <div class="intro-btn">
-            <div class="cta">
-              <a href="#contact" class="btn">Get In Touch</a>
-            </div>
-            <div class="cta">
-              <a href="#projects" class="btn">My Projects</a>
-            </div>
+  <div class="w3-container w3-text-grey" id="jeans">
+    <p>8 items</p>
+  </div>
+
+  <!-- Product grid -->
+  <div class="w3-row w3-grayscale">
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="/w3images/jeans1.jpg" style="width:100%">
+        <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="/w3images/jeans2.jpg" style="width:100%">
+        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="/w3images/jeans2.jpg" style="width:100%">
+          <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
           </div>
-          <div>
-            <a href="#about" class="scroll-down">
-              <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </a>
+        </div>
+        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="/w3images/jeans3.jpg" style="width:100%">
+        <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="/w3images/jeans3.jpg" style="width:100%">
+        <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="/w3images/jeans4.jpg" style="width:100%">
+          <span class="w3-tag w3-display-topleft">Sale</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
           </div>
         </div>
+        <p>Vintage Skinny Jeans<br><b class="w3-text-red">$14.99</b></p>
       </div>
-    </section>
+    </div>
 
-    <section id="about" class="about">
-      <div class="container">
-        <div class="about-text-box">
-          <h2>Hello 👋🏽</h2>
-          <p>
-            I am a third-year Salvadoran student of Engineering and Business at Escuela Superior de Economía y Negocios, 
-            as well as a technology entrepreneur, co-founder of Atempo El Salvador. I am proactive and like to get 
-            involved in challenging projects that open opportunities for youth and children in the region. 
-            I am a committed young woman who aims to impact her community with her creativity, innovation and vision.
-          </p>
-        </div>
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="/w3images/jeans4.jpg" style="width:100%">
+        <p>Vintage Skinny Jeans<br><b>$14.99</b></p>
       </div>
-      <hr />
-    </section>
+      <div class="w3-container">
+        <img src="/w3images/jeans1.jpg" style="width:100%">
+        <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+      </div>
+    </div>
+  </div>
 
-    <section id="studies" class="studies">
-      <div class="container">
-        <div class="title-heading">
-          <h2>STUDIES</h2>
-          <p>
-            I have extensive preparation, look a bit about it ...
-          </p>
-        </div>
-        <div class="service-tiers">
-          <div class="tier-item">
-            <i class="fa fa-code" aria-hidden="true"></i>
-            <h2>Basic Studies</h2>
-            <p>
-            Graduated with honors from general baccalaureate - Liceo Salvadoreño in San Salvador in 2018
-            </p>
-          </div>
-          <div class="tier-item">
-            <i class="fa fa-mobile" aria-hidden="true"></i>
-            <h2>Higher education</h2>
-            <p>
-            I obtained the PAA scholarship for the best admission process in 2019 and I am currently putting all my effort into learning a lot about the subjects of my career - Escuela Superior de Economía y Negocios  (ESEN)
-            </p>
-          </div>
-          <!-- 
-                <div class="tier-item">
-                  <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                  <h2>PSD to HTML</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-                    quasi earum, debitis exercitationem quod labore quae, saepe
-                    voluptatum fugiat placeat iste, numquam maxime? Aliquam
-                    explicabo, reiciendis corrupti voluptatum eum esse?
-                  </p>
-                </div>
-                -->
-        </div>
-      </div>
-      <hr />
-    </section>
-
-    <section id="projects" class="projects">
-      <div class="title-heading">
-        <h2>PROJECTS</h2>
-        <p>Take a look at my latest projects</p>
-      </div>
-      <div class="project-item">
-        <div class="project-img has-margin-right">
-          <img src="/static/images/sppms.png" />
-        </div>
-        <div class="project-description">
-          <h2>Volunteering</h2>
-          <p>
-            I have volunteered in multiple organizations such as Tools For Youth El Salvador and Shoeing El Salvador and each of them has contributed to both my hard skills and my soft skills
-          </p>
-          <a href="#" class="project-link" target="_blank"><i class="fa fa-github" aria-hidden="true"> View Code</i></a>
-        </div>
+  <!-- Subscribe section -->
+  <div class="w3-container w3-black w3-padding-32">
+    <h1>Subscríbete</h1>
+    <p>Para obtener ofertas especiales y enterárte de las novedades:</p>
+    <p><input class="w3-input w3-border" type="text" placeholder="Ingresa tu e-mail" style="width:100%"></p>
+    <button type="button" class="w3-button w3-red w3-margin-bottom">Subscríbete</button>
+  </div>
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4>Contáctanos</h4>
+        <p>¿Tienes preguntas? Te responderemos lo más pronto posible.</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Nombre" name="Nombre" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Asunto" name="Asunto" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Mensaje" name="Mensaje" required></p>
+          <button type="submit" class="w3-button w3-block w3-black">Enviar</button>
+        </form>
       </div>
 
-      <div class="project-item">
-        <div class="project-description has-margin-right">
-          <h2>Work experience</h2>
-          <p>
-          I did an internship as a communications intern at Cloud Native El Salvador, a company that is part of the Cloud Native Computing Foundation (located in California) and this helped me to get more involved in the world of emerging technologies and to expand my list of professional contacts.
-          </p>
-          <a href="#" class="project-link" target="_blank"><i class="fa fa-github" aria-hidden="true"> View Code</i></a>
-        </div>
-        <div class="project-img">
-          <img src="/static/images/to-do.png" />
-        </div>
+      <div class="w3-col s4">
+        <h4>Acerca de</h4>
+        <p><a href="#">Conócenos</a></p>
+        <p><a href="#">Entregas</a></p>
+        <p><a href="#">Pago</a></p>
+        <p><a href="#">Soporte</a></p>
       </div>
 
-      <div class="project-item">
-        <div class="project-img has-margin-right">
-          <img src="/static/images/calculator.png" />
-        </div>
-        <div class="project-description">
-          <h2>Atempo</h2>
-          <p>
-           I founded 2019 together with two colleagues from the university atempoapp.com, which is a platform oriented to the empowerment of the music industry in our country with two pillars: online music classes and the creation of a community of musicians in El Salvador. We currently have 13 teachers and interns from different universities working in Finance, Technology, Marketing, Communications and Sales.
-          </p>
-          <a href="#" class="project-link" target="_blank"><i class="fa fa-github" aria-hidden="true"> View Code</i></a>
-        </div>
+      <div class="w3-col s4 w3-justify">
+        <h4>Nosotros</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> Santa Tecla, El Salvador</p>
+        <p><i class="fa fa-fw fa-phone"></i>503 7682 6922</p>
+        <p><i class="fa fa-fw fa-envelope"></i> hibiscussv@gmail.com</p>
+        <h4>Aceptamos</h4>
+        <p><i class="fa fa-money" aria-hidden="true"></i> Efectivo</p>
+        <p><i class="fa fa-fw fa-credit-card"></i> Tarjeta de crédito</p>
+        <br>
+        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
       </div>
-      <hr />
-    </section>
+    </div>
+  </footer>
 
-    <section id="contact" class="contact">
-      <h2>GET IN TOUCH</h2>
-      <p>
-      Do not hesitate to contact me, I am willing to help you achieve your goals and projects with my skills.
-      </p>
-      <p>
-        <i>If it is related to my Atempo project, start your subject with the word
-          <strong>"Atempo"</strong></i>
-      </p>
-      <div class="container">
-        <p>
-          <a href="fdiaz@atempoapp.com"><i class="fas fa-envelope-open"></i> fdiaz@atempoapp.com</a>
-        </p>
-        <p>
-          <a href="#" target="_blank"><i class="fab fa-youtube"> YouTube</i></a>
-        </p>
-        <p>
-          <a href="#" target="_blank"><i class="fab fa-dev"> Dev</i></a>
-        </p>
-        <p>
-          <a href="#" target="_blank"><i class="fab fa-twitter"> Twitter</i></a>
-        </p>
-      </div>
-      <hr />
-    </section>
+  <div class="w3-black w3-center w3-padding-24">Powered by Hibuscus El Salvador</a></div>
 
-    <footer>
-      <div class="footer-nav">
-        <a href="#landing-page" class="footer-nav-link">Home</a>
-        <a href="#about" class="footer-nav-link">About</a>
-        <a href="#studies" class="footer-nav-link">Studies</a>
-        <a href="projects" class="footer-nav-link">Projects</a>
-        <a href="#contact" class="footer-nav-link">Contact</a>
-      </div>
-      <div class="footer-coded-by">
-        <p>
-          <i class="fas fa-code"></i> with 💙 by Fátima Díaz &copy; 2021
-        </p>
-        <p>Built with pure HTML, CSS and JavaScript</p>
-      </div>
-      <div class="footer-social">
-        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-dev"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-      </div>
-    </footer>
+  <!-- End page content -->
+</div>
 
-  </main>
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">SUSCRÍBETE</h2>
+      <p>Únete a nuestra lista de correo para recibir actualizaciones sobre new arrivals y ofertas especiales.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
 
-  <script src="/static/main.js"></script>
 </body>
-
 </html>
-
-
