@@ -29,7 +29,7 @@ function checkLogin() {
     var user = document.getElementById("user").value;
     var password = document.getElementById("passw").value;
 
-    var userArray = JSON.parse(localStorage.getItem("lUserArray"));
+    var userArray = JSON.parse(localStorage.getItem("aUserArray"));
 
     if (user !== null && user !== "") {
         if (password !== null && password !== "") {
@@ -90,5 +90,5 @@ function createSessionUser(user, password, role) {
 }
 
 /*
-***** login functionality end 
+***** login functionality end
 */
