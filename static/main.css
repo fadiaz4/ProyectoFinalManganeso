@@ -16,7 +16,7 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
   color: #e7e7e7;
-  background: rgb(19, 19, 19);
+
 }
 
 a {
@@ -302,6 +302,225 @@ nav {
   color: rgba(189, 72, 0);
 }
 
+/*Quita el underline de darle click a home, etc*/
+p{
+  color: #555;
+}
+
+/*Para que las imágenes se queden en fila*/
+.row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 100px;
+  margin-right: -50px;
+  margin-left: 200px;
+}
+
+
+.btn{
+  /*    padding: 8px 30px;
+  margin: 30px;
+  border-radius: 30px;
+  display: inline-block;
+  background: #ff523b;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 24px;
+  border-radius: 8px;
+  transition: background 0.5s;*/
+  font-size: 16px;
+  padding: 10px 24px;
+  border-radius: 8px;
+  background: #2DC4B4;
+  color: #fff;
+  transition: background 0.5s;
+}
+.btn:hover{
+  background: #563434;
+}
+
+/*featured categories*/
+.categories{
+  margin: 70px 0;
+}
+.col-3{
+  flex: 30%;
+  min-width: 250px;
+  margin-bottom: 30px;
+}
+.col-3 img{
+  width: 100%;
+  margin-left: -100px;
+  margin-right: 50px;
+  margin-bottom: 30px;
+}
+.small-model{
+  max-width: 2000px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.small-container{
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-left: -230px;
+}
+
+.col-4{
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  transition: transform 0.5s;
+}
+.col-4 img{
+  width: 110%;
+}
+.title{
+  text-align: center;
+  margin: 0 auto 80px;
+  margin-left: 200px;
+  position: relative;
+  line-height: 60px;
+  color: #555;
+}
+.title::after{
+  content: '';
+  background: 80px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 20px;
+}
+h4{
+  color: #555;
+  font-weight: normal;
+}
+h3{
+  display: block;
+  font-size: 1em;
+  margin-top: 1em;
+  margin-bottom: -2em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+.col-4 p{
+  font-size:14px;
+}
+.rating .fa{
+  color: #2DC4B4
+}
+.col-4:hover{
+  transform: translateY(-5px);
+}
+
+/* ---- all products page----*/
+.small-container h2{
+  margin: auto;
+  color:#222222;
+}
+.row-2{
+  justify-content: space-between;
+  margin: 100px auto 50px;
+}
+select{
+  border: 1px solid #2DC4B4;
+  padding: 5px;
+}
+select:focus{
+  outline: none;
+}
+.page-btn{
+  margin: 0 auto 80px;
+  margin-left: 200px;
+  color: #222222;
+}
+.page-btn span{
+  display: inline-block;
+  border: 1px solid #2DC4B4;
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+.page-btn span:hover{
+  background: #2DC4B4;
+  color: #222222;
+}
+.col-4{
+  margin-bottom: 30px;
+}
+/*------single product details*/
+h1{
+  color: #222222;
+}
+.single-product{
+  margin-top: 80px;
+}
+.single-product col-2 img{
+  padding: 0;
+}
+.single-product col-2{
+  padding: 20px;
+}
+.single-product h4{
+  margin: 20px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+.single-product select{
+  display: block;
+  padding: 10px;
+  margin-top: 20px;
+}
+.single-product input{
+  width: 50px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 20px;
+  margin-right: 10px;
+  border: 1px solid #2DC4B4;
+}
+input:focus{
+  outline: none;
+}
+.single-product .fa{
+  color:#2DC4B4;
+  margin-left: 10px;
+}
+.small-img-row{
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 10px;
+  margin-bottom: -6px;
+}
+.small-img-col{
+  flex-basis: 24%;
+  cursor: pointer;
+}
+small-img-row img{
+  margin-top: 30px;
+}
+.col-2 p{
+  font-size:14px;
+  margin-top: -6em;
+  line-height: 1.8;
+}
+.col-2{
+  margin-top: -10px;
+}
+
+
 /* About */
 
 .about {
@@ -353,6 +572,7 @@ hr {
   border: 0;
   height: 1px;
 }
+
 
 /* Services */
 
@@ -497,7 +717,24 @@ hr {
   justify-content: space-evenly;
   align-items: center;
 }
-
+@media only screen and (max-width: 600px){
+  .row{
+      text-align: center;
+  }
+  .col-2, col-3, col-4{
+      flex-basis: 100%;
+  }
+  .single-product .row{
+      text-align: left;
+  }
+  .single-product .col-2{
+      padding: 20px 0;
+  }
+  .single-product h1{
+      font-size: 26px;
+      line-height: 32px;
+  }
+}
 /* Footer */
 
 footer {
@@ -596,8 +833,8 @@ footer a {
     flex-direction: column;
   }
 
-  footer,
-  footer p {
+footer,
+footer p {
     font-size: 1.2rem;
   }
-}
+ }
