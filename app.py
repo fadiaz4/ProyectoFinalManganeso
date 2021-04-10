@@ -24,9 +24,9 @@ def swimmwear():
 def otros():
     return render_template("otros.html")
 
-@app.route("/detalles")
-def details():
-    return render_template("product-details.html")
+@app.route("/cart")
+def cart():
+    return cart("cart.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
