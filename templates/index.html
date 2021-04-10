@@ -27,16 +27,9 @@
     <h3 class="w3-wide"><b>LOGO</b></h3>
   </div>
   <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
-    <a href="#" class="w3-bar-item w3-button">Nosotros</a>
-    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="SMWBT">
-      Swimmwear <i class="fa fa-caret-down"></i>
-    </a>
-    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-      <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Small</a>
-      <a href="#" class="w3-bar-item w3-button">Medium</a>
-      <a href="#" class="w3-bar-item w3-button">Large</a>
-    </div>
-    <a href="#" class="w3-bar-item w3-button">Otros</a>
+    <a href="/templates/nosotros.html" class="w3-bar-item w3-button">Nosotros</a>
+    <a href="/templates/swimmwear.html" class="w3-bar-item w3-button">Swimmwear</a>
+    <a href="/templates/otros.html" class="w3-bar-item w3-button">Otros</a>
   </div>
   <a href="#footer" class="w3-bar-item w3-button w3-padding">Contáctanos</a> 
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Suscríbete</a> 
@@ -59,12 +52,17 @@
 
   <!-- Encabezado superior -->
   <header class="w3-container w3-xlarge">
-    <p class="w3-left">Hibiscus El Salvador</p>
-    <p class="w3-right">
-      <i class="fa fa-shopping-cart w3-margin-right"></i>
-      <a href="{{url_for('login')}}">Login</a>
-    </p>
+    <div class="nav">
+      <a href="/templates/index.html" target="_blank">Hibiscus El Salvador</a>
+      <div id="headerM">
+        <p class="w3-right">
+          <a href="/templates/cart.html" target="_blank"><i class="fa fa-shopping-cart w3-margin-right"></i></a>
+          <a href="{{url_for('login')}}">Login</a>
+        </p>
+      </div>
+    </div>
   </header>
+
 
   <!-------- featured categories------>
     <div class="categories">
@@ -77,112 +75,7 @@
         </div>
 
     </div>
-    <!-------- featured products------>
-    <div class="small-container">
-        <h2 class="title">Featured Products</h2>
-        <div class="row">
-            <div class="col-4">
-                <img src="/static/images/bikini_dye.png">
-                <h4> Tie Dye Bikini</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-                <p>$25.00</p>
-            </div>
-            <div class="col-4">
-                <img src="/static/images/biki_lines.png">
-                <h4> Bikini de colores</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>$20.00</p>
-            </div>
-            <div class="col-4">
-                <img src="/static/images/bikini_black.png">
-                <h4> Bikini negro</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-                <p>$15.00</p>
-            </div>
-            <div class="col-4">
-                <img src="/static/images/bikini_shorts.png">
-                <h4> Bikini con shorts</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                </div>
-                <p>$30.00</p>
-            </div>
-        </div>
-        <h2 class="title">Productos Nuevos</h2>
-        <div class="row">
-            <div class="col-4">
-                <img src="/static/images/entero_negro.png">
-                <h4> Traje de baño entero negro</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-                <p>$25.00</p>
-            </div>
-            <div class="col-4">
-                <img src="/static/images/manta_azul.png">
-                <h4> Manta azul</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>$20.00</p>
-            </div>
-            <div class="col-4">
-                <img src="/static/images/doscolores.png">
-                <h4> Traje de baño entero</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-                <p>$15.00</p>
-            </div>
-            <div class="col-4">
-                <img src="/static/images/kimono.png">
-                <h4> Kimono</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                </div>
-                <p>$30.00</p>
-            </div>
-        </div>
-    </div>
-
+   
   <!-- Sección de suscripción -->
   <div class="w3-container w3-black w3-padding-32">
     <h1>Subscríbete</h1>
@@ -246,7 +139,9 @@
   </div>
 </div>
 
+<script src="/static/cart.js"></script>
 <script src="{{url_for('static', filename='preload.js')}}"></script>
 <script src="{{url_for('static', filename='main.js')}}"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 </html>
