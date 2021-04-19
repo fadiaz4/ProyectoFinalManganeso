@@ -45,10 +45,11 @@
       <a href="/templates/swimmwear.html" class="w3-bar-item w3-button">Swimmwear</a>
       <a href="/templates/otros.html" class="w3-bar-item w3-button">Otros</a>
     </div>
-    <a href="#footer" class="w3-bar-item w3-button w3-padding">Contáctanos</a> 
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Suscríbete</a> 
+    <a href="#footer" class="w3-bar-item w3-button w3-padding">Contáctanos</a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding"
+      onclick="document.getElementById('newsletter').style.display='block'">Suscríbete</a>
   </nav>
-  
+
   <!-- Menú de arriba en pantallas pequeñas -->
   <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
     <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
@@ -67,18 +68,19 @@
     <div class="w3-hide-large" style="margin-top:83px"></div>
 
     <!-- Encabezado superior -->
+    <!-- Encabezado superior -->
     <header class="w3-container w3-xlarge">
       <div class="nav">
         <a href="/templates/index.html" target="_blank">Hibiscus El Salvador</a>
         <div id="headerM">
           <p class="w3-right">
-            <a href="/templates/cart.html" target="_blank"><i class="fa fa-shopping-cart w3-margin-right"></i></a>
-            <a href="{{url_for('login')}}">Login</a>
+            <a href="{{url_for('cart')}}"><i class="fa fa-shopping-cart w3-margin-right"></i></a>
+            <a href="{{url_for('login')}}"><i class="fa fa-user w3-margin-right"></i></a>
           </p>
         </div>
       </div>
     </header>
-    
+
     <!-- Sección de trajes de baño -->
     <div class="small-container">
       <div class="row row-2">
