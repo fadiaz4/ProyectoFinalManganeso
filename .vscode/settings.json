@@ -1,5 +1,16 @@
 {
-    "liveServer.settings.port": 5502,
-    "python.pythonPath": "C:\\Users\\fatim\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
-    "git.ignoreLimitWarning": true
+    "python.linting.pycodestyleEnabled": true,
+    "python.linting.pycodestyleArgs": [
+        "--max-line-length=180"
+    ],
+    "python.autoComplete.extraPaths": [
+        "./app.py"
+    ],
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.formatting.provider": "black",
+    //"editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "python.pythonPath": "C:\\Users\\fatim\\AppData\\Local\\Programs\\Python\\Python38\\python.exe"
 }

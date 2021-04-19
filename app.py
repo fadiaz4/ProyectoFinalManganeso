@@ -30,9 +30,8 @@ def otros():
 
 @app.route("/cart")
 def cart():
-    return cart("cart.html")
+    return render_template("cart.html")
 
 
 if __name__ == "__main__":
     app.run(debug=True)
-
