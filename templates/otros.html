@@ -42,15 +42,14 @@
           <img src="/static/images/hibiscusSV.jpg" />
         </a>
       </div>
-    </div>
-    <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
-      <a href="./#Conócenos" class="w3-bar-item w3-button">Nosotros</a>
-      <a href="{{url_for('swimmwear')}}" class="w3-bar-item w3-button">Swimmwear</a>
-      <a href="{{url_for('otros')}}" class="w3-bar-item w3-button">Otros</a>
-    </div>
-    <a href="#footer" class="w3-bar-item w3-button w3-padding">Contáctanos</a>
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding"
-      onclick="document.getElementById('newsletter').style.display='block'">Suscríbete</a>
+      <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+        <a href="http://127.0.0.1:5502/templates/index.html#Conocenos" class="w3-bar-item w3-button">Nosotros</a>
+        <a href="/templates/swimmwear.html" class="w3-bar-item w3-button">Swimmwear</a>
+        <a href="/templates/otros.html" class="w3-bar-item w3-button">Otros</a>
+      </div>
+      <a href="#footer" class="w3-bar-item w3-button w3-padding">Contáctanos</a>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding"
+        onclick="document.getElementById('newsletter').style.display='block'">Suscríbete</a>
   </nav>
 
   <!-- Menú de arriba en pantallas pequeñas -->
@@ -73,11 +72,11 @@
     <!-- Encabezado superior -->
     <header class="w3-container w3-xlarge">
       <div class="nav">
-        <a href="./" target="_blank">Hibiscus El Salvador</a>
+        <a href="/templates/index.html" target="_blank">Hibiscus El Salvador</a>
         <div id="headerM">
           <p class="w3-right">
-            <a href="{{url_for('cart')}}"><i class="fa fa-shopping-cart w3-margin-right"></i></a>
-            <a href="{{url_for('login')}}"><i class="fa fa-user w3-margin-right"></i></a>
+            <a href="/templates/cart.html" target="_blank"><i class="fa fa-shopping-cart w3-margin-right"></i></a>
+            <a href="{{url_for('login')}}">Login</a>
           </p>
         </div>
       </div>
@@ -191,30 +190,26 @@
 
           <div class="w3-col s4">
             <h4>Acerca de</h4>
-            <p><a href="./Conócenos">Conócenos</a></p>
-            <p><a href="./#Entregas">Entregas</a></p>
-            <p><a href="./#Pago">Pago</a></p>
-            <p><a href="./#Devoluciones">Devoluciones</a></p>
+            <p><a href="http://127.0.0.1:5502/templates/index.html#Conocenos">Conócenos</a></p>
+            <p><a href="http://127.0.0.1:5502/templates/index.html#Entregas">Entregas</a></p>
+            <p><a href="http://127.0.0.1:5502/templates/index.html#Pago">Pago</a></p>
+            <p><a href="http://127.0.0.1:5502/templates/index.html#Cambio">Devolución y cambio</a></p>
           </div>
 
           <div class="w3-col s4 w3-justify">
             <h4>Nosotros</h4>
             <p><i class="fa fa-fw fa-map-marker"></i>Santa Tecla, El Salvador</p>
             <p><i class="fa fa-fw fa-phone"></i>503 7682 6922</p>
-            <a href="mailto:hibiscusswimsv@gmail.com"><i class="fa fa-fw fa-envelope"></i>
-              hibiscusswimsv@gmail.com</a>
-            <h4>Aceptamos</h4>
-            <p><i class="fa fa-money aria-hidden=true"></i> Efectivo</p>
-            <p><i class="fa fa-fw fa-credit-card"></i> Tarjeta de crédito</p>
-            <br>
-            <a href="https://www.facebook.com/svhibiscus" target="_blank"><i
-                class="fa fa-facebook-official w3-hover-opacity w3-large"></i> HIBISCUS
-              SWIMWEAR</a>
-            <br>
-            <a href="https://www.instagram.com/svhibiscus/" target="_blank"><i
-                class="fa fa-instagram w3-hover-opacity w3-large"></i> svhibiscus
-
-            </a>
+            <a href="mailto:hibiscusswimsv@gmail.com"><i class="fa fa-fw fa-envelope w3-hover-opacity w3-large"></i>
+              hibiscusswimsv@gmail.com</>
+              <h4>Aceptamos</h4>
+              <p><i class="fa fa-money" aria-hidden="true"></i> Efectivo</p>
+              <p><i class="fa fa-fw fa-credit-card"></i> Tarjeta de crédito</p>
+              <br>
+              <a href="https://www.facebook.com/svhibiscus" target="_blank"><i
+                  class="fa fa-facebook-official w3-hover-opacity w3-large"></i></a>
+              <a href="https://www.instagram.com/svhibiscus/" target="_blank"><i
+                  class="fa fa-instagram w3-hover-opacity w3-large"></i></a>
           </div>
         </div>
       </footer>
@@ -240,9 +235,8 @@
       </div>
     </div>
     <script src="/static/cart.js"></script>
-    <script src="{{url_for('static', filename='preload.js')}}"></script>
-    <script src="{{url_for('static', filename='main.js')}}"></script>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="/static/preload.js"></script>
+    <script src="/static/main.js"></script>
 </body>
 
 </html>

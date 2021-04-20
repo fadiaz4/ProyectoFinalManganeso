@@ -97,6 +97,7 @@ let products = [
         price: 25,
         inCart: 0
     }
+
 ];
 
 for (let i = 0; i < carts.length; i++) {
@@ -202,13 +203,13 @@ function displayCart() {
 
         productContainer.innerHTML += `
                 <div class="basketTotalContainer">
-                    <h4 class="basketTotalTitle">Basket Total</h4>
+                    <h4 class="basketTotalTitle">Total a pagar: </h4>
                     <h4 class="basketTotal">$${cart}.00</h4>
                 </div>`
-
-
     }
+    console.log(cart);
 }
+
 
 function clearAll() {
     localStorage.clear();
