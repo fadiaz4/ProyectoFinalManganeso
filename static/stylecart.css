@@ -6,11 +6,11 @@
 }
 
 header {
-    background-image: url('images/cover.jpg');
+    background-image: url('images/hibiscusSV.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 150px;
+    height: 200px;
     position: relative;
 }
 
@@ -24,7 +24,7 @@ header {
     bottom: 0;
     padding: 0 !important;
     margin: 0 !important;
-    background-color: rgba(10,10,10,0.3);
+    background-color: rgba(10, 10, 10, 0.3);
 }
 
 nav {
@@ -53,13 +53,8 @@ nav li span {
 li a {
     padding: 5px;
     background-color: #fff;
-    text-decoration: none;;
-}
-
-.cart ion-icon {
-   vertical-align: bottom;
-   font-size: 20px;
-   padding-right: 5px;
+    text-decoration: none;
+    ;
 }
 
 .cart a {
@@ -69,13 +64,17 @@ li a {
     text-decoration: none;
 }
 
-.container,
-.container-products {
+a:hover {
+    color: rgba(249, 105, 14, 1);
+}
+
+.container, .container-products {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 50px;
-    padding-bottom: 100px;;
+    padding-bottom: 100px;
+    ;
 }
 
 .image {
@@ -95,10 +94,7 @@ li a {
     text-align: center;
 }
 
-.image:hover .cart1,
-.image:hover .cart2,
-.image:hover .cart3,
-.image:hover .cart4 {
+.image:hover .cart1, .image:hover .cart2, .image:hover .cart3, .image:hover .cart4 {
     bottom: 50px;
     opacity: 1;
     padding: 10px;
@@ -112,14 +108,6 @@ li a {
     justify-content: space-around;
     margin: 0 auto;
     margin-top: 50px;
-}
-
-.container-products ion-icon {
-    font-size: 25px;
-    color: blue;
-    margin-left: 10px;
-    margin-right: 10px;
-    cursor: pointer;
 }
 
 .product-header {
@@ -140,6 +128,7 @@ li a {
     border-bottom: 1px solid lightgray;
     display: flex;
     align-items: center;
+    left: 6rem
 }
 
 .quantity {
@@ -165,19 +154,16 @@ li a {
     border-bottom: 1px solid lightgray;
 }
 
-.product ion-icon {
-    cursor: pointer;
-    
-}
-
 .products {
-    width: 100%;
+    width: 150%;
     display: flex;
     flex-wrap: wrap;
 }
 
 .products img {
-    width: 75px;
+    width: 95px;
+    display: flex;
+    align-items: center;
 }
 
 .basketTotalContainer {
@@ -193,25 +179,4 @@ li a {
 
 .basketTotal {
     width: 10%;
-}
-
-@media(max-width: 500px) {
-    nav h2 {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 10px;;
-    }
-
-    .sm-hide {
-        display: none;;
-    }
-
-    .products,
-    .product-header {
-        justify-content: center;
-    }
-
-    .basketTotalContainer {
-        padding-right: 8%;
-    }
 }
