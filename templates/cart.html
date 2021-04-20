@@ -31,14 +31,14 @@
     <div class="w3-container w3-display-container w3-padding-16">
       <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
       <div class="nav-brand">
-        <a href="{{url_for('index')}}">
+        <a href="index.html">
           <img src="/static/images/hibiscusSV.jpg" style="z-index:3;width:7rem" />
         </a>
       </div>
       <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
         <a href="#" class="w3-bar-item w3-button">Nosotros</a>
-        <a href="{{url_for('Swimmwear')}}" class="w3-bar-item w3-button">Swimmwear</a>
-        <a href="{{url_for('otros')}}" class="w3-bar-item w3-button">Otros</a>
+        <a href="/templates/swimmwear.html" class="w3-bar-item w3-button">Swimmwear</a>
+        <a href="/templates/otros.html" class="w3-bar-item w3-button">Otros</a>
       </div>
       <a href="#footer" class="w3-bar-item w3-button w3-padding">Contáctanos</a>
       <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding"
@@ -68,10 +68,10 @@
     <!-- Encabezado superior -->
     <header class="w3-container w3-xlarge">
       <div class="nav">
-        <a href="{{url_for('index')}}">Pagina Principal</a>
+        <a href="/templates/index.html">Pagina Principal</a>
         <div id="headerM">
           <p class="w3-right">
-            <a href="{{url_for('cart')}}"><i class="fa fa-shopping-cart w3-margin-right"></i></a>
+            <a href="/templates/cart.html"><i class="fa fa-shopping-cart w3-margin-right"></i></a>
             <a href="{{url_for('login')}}">Login</a>
           </p>
         </div>
@@ -91,7 +91,7 @@
         </div>
         <button onclick="clearAll()"> Eliminar todos<i
             class="fa fa-trash fa-2x w3-margin-rigth w3-margin-left"></i></button>
-        <a href="{{url_for('checkout')}}" target="_blank" class="w3-bar-item w3-button">Procede a pagar<i
+        <a href="/templates/checkout.html" target="_blank" class="w3-bar-item w3-button">Procede a pagar<i
             class="fa fa-credit-card-alt fa-4x w3-margin-rigth w3-margin-left"></i></a>
       </div>
 
@@ -158,9 +158,9 @@
           </div>
         </div>
       </footer>
+
       <script src="{{url_for('static', filename='cart.js')}}"></script>
       <script src="{{url_for('static', filename='preload.js')}}"></script>
       <script src="{{url_for('static', filename='main.js')}}"></script>
-
 
     </body>
