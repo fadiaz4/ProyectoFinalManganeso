@@ -1,3 +1,5 @@
+/*prueba*/
+
 <!DOCTYPE html>
 <html>
 
@@ -10,13 +12,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
   <style>
     .w3-sidebar a {
-      font-family: "Roboto", sans-serif
+      font-family: "Poppins", sans-serif
     }
 
     body,
@@ -27,7 +26,7 @@
     h5,
     h6,
     .w3-wide {
-      font-family: "Montserrat", sans-serif;
+      font-family: "Poppins", sans-serif;
     }
   </style>
 </head>
@@ -38,7 +37,7 @@
   <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
     <div class="w3-container w3-display-container w3-padding-16">
       <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-      <h3 class="w3-wide"><b>LOGO</b></h3>
+      <h3 class="w3-wide"><b><img src="/static/images/hibiscusSV.png"></b></h3>
     </div>
     <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
       <a href="./#Conócenos" class="w3-bar-item w3-button">Nosotros</a>
@@ -50,9 +49,9 @@
       onclick="document.getElementById('newsletter').style.display='block'">Suscríbete</a>
   </nav>
 
- <!-- Menú de arriba en pantallas pequeñas -->
+  <!-- Menú de arriba en pantallas pequeñas -->
   <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-    <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+    <div class="w3-bar-item w3-padding-24 w3-wide"><img src="/static/images/hibiscusSV.png"></div>
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i
         class="fa fa-bars"></i></a>
   </header>
@@ -68,7 +67,6 @@
     <div class="w3-hide-large" style="margin-top:83px"></div>
 
     <!-- Encabezado superior -->
-    <!-- Encabezado superior -->
     <header class="w3-container w3-xlarge">
       <div class="nav">
         <a href="./" target="_blank">Hibiscus El Salvador</a>
@@ -80,283 +78,185 @@
         </div>
       </div>
     </header>
-    <!-- Sección de trajes de baño -->
-    <div class="small-container">
-      <div class="row row-2">
-        <h2>Todos los productos</h2>
-      </div>
 
-      <div class="row">
-        <div class="col-4">
-          <img src="/static/images/bikini_dye.png">
-          <h4> Tie Dye Bikini</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
+
+    <!-------- featured categories------>
+    <div class="categories">
+      <div class="small-model">
+        <div class="row">
+          <div class="col-3">
+            <img src="/static/images/images1.jpg">
           </div>
-          <p>$25.00</p>
-          <a class="add-cart cart1" href="#">Add Cart</a>
-          <input type="hidden" value="25" />
         </div>
-        <div class="col-4">
-          <img src="/static/images/biki_lines.png">
-          <h4> Bikini de colores</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$20.00</p>
-          <a class="add-cart cart2" href="#">Add Cart</a>
-          <input type="hidden" value="20" />
-        </div>
-        <div class="col-4">
-          <img src="/static/images/bikini_black.png">
-          <h4> Bikini negro</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-          </div>
-          <p>$15.00</p>
-          <a class="add-cart cart3" href="#">Add Cart</a>
-          <input type="hidden" value="20" />
-        </div>
-        <div class="col-4">
-          <img src="/static/images/bikini_shorts.png">
-          <h4> Bikini con shorts</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-          </div>
-          <p>$30.00</p>
-          <a class="add-cart cart4" href="#">Add Cart</a>
-          <input type="hidden" value="30" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-4">
-          <img src="/static/images/entero_negro.png">
-          <h4> Traje de baño entero negro</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-          </div>
-          <p>$25.00</p>
-          <a class="add-cart cart5" href="#">Add Cart</a>
-          <input type="hidden" value="15" />
-        </div>
-        <div class="col-4">
-          <img src="/static/images/top.png">
-          <h4> Bikini Top</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$12.00</p>
-          <a class="add-cart cart6" href="#">Add Cart</a>
-          <input type="hidden" value="12" />
-        </div>
-        <div class="col-4">
-          <img src="/static/images/menta.png">
-          <h4> Bikini Menta</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-          </div>
-          <p>$15.00</p>
-          <a class="add-cart cart7" href="#">Add Cart</a>
-          <input type="hidden" value="15" />
-        </div>
-        <div class="col-4">
-          <img src="/static/images/snake_black.png">
-          <h4> Snake Print Bikini</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-          </div>
-          <p>$30.00</p>
-          <a class="add-cart cart8" href="#">Add Cart</a>
-          <input type="hidden" value="30" />
-        </div>
-        <div class="col-4">
-          <img src="/static/images/amarillo.png">
-          <h4> Bikini amarillo</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-          </div>
-          <p>$12.00</p>
-          <a class="add-cart cart9" href="#">Add Cart</a>
-          <input type="hidden" value="12" />
-        </div>
-        <div class="col-4">
-          <img src="/static/images/doscolores.png">
-          <h4>Bikini sport</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-          </div>
-          <p>$20.00</p>
-          <a class="add-cart cart10" href="#">Add Cart</a>
-          <input type="hidden" value="20" />
-        </div>
-        <div class="col-4">
-          <img src="/static/images/azul_tiedye.png">
-          <h4>Bikini tie dye azul</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-          </div>
-          <p>$15.00</p>
-          <a class="add-cart cart11" href="#">Add Cart</a>
-          <input type="hidden" value="15" />
-        </div>
-        <div class="col-4">
-          <img src="/static/images/snake.png">
-          <h4>Snake print bikini</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-          </div>
-          <p>$25.00</p>
-          <a class="add-cart cart12" href="#">Add Cart</a>
-          <input type="hidden" value="25" />
-        </div>
-      </div>
-      <!---numero de aparte de abajo de página-->
-      <div class="page-btn">
-        <a href="swimmwear">
-          <span>1</span>
-        </a>
-        <a href="swimmwear2">
-          <span>2</span>
-        </a>
-        <a href="swimmwear2">
-          <span>3</span>
-        </a>
-        <a href="swimmwear2">
-          <span>4</span>
-        </a>
-        <a href="swimmwear2">
-          <span>&#8594</span>
-        </a>
       </div>
     </div>
 
-
-    <!-- Sección de suscripción -->
-    <div class="w3-container w3-black w3-padding-32">
-      <h1>Subscríbete</h1>
-      <p>Para obtener ofertas especiales y enterárte de las novedades:</p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Ingresa tu e-mail" style="width:100%"></p>
-      <button type="button" class="w3-button w3-red w3-margin-bottom">Subscríbete</button>
-    </div>
-    <!-- Pie de página -->
-    <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
-      <div class="w3-row-padding">
-        <div class="w3-col s4">
-          <h4>Contáctanos</h4>
-          <p>¿Tienes preguntas? Te responderemos lo más pronto posible.</p>
-          <form action="/action_page.php" target="_blank">
-            <p><input class="w3-input w3-border" type="text" placeholder="Nombre" name="Nombre" required></p>
-            <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
-            <p><input class="w3-input w3-border" type="text" placeholder="Asunto" name="Asunto" required></p>
-            <p><input class="w3-input w3-border" type="text" placeholder="Mensaje" name="Mensaje" required></p>
-            <button type="submit" class="w3-button w3-block w3-black">Enviar</button>
-          </form>
-        </div>
-
-        <div class="w3-col s4">
-          <h4>Acerca de</h4>
-          <p><a href="./Conócenos">Conócenos</a></p>
-          <p><a href="./#Entregas">Entregas</a></p>
-          <p><a href="./#Pago">Pago</a></p>
-          <p><a href="./#Devoluciones">Devoluciones</a></p>
-        </div>
-
-        <div class="w3-col s4 w3-justify">
-          <h4>Nosotros</h4>
-          <p><i class="fa fa-fw fa-map-marker"></i>Santa Tecla, El Salvador</p>
-          <p><i class="fa fa-fw fa-phone"></i>503 7682 6922</p>
-          <a href="mailto:hibiscusswimsv@gmail.com"><i class="fa fa-fw fa-envelope"></i>
-            hibiscusswimsv@gmail.com</a>
-          <h4>Aceptamos</h4>
-          <p><i class="fa fa-money aria-hidden=true"></i> Efectivo</p>
-          <p><i class="fa fa-fw fa-credit-card"></i> Tarjeta de crédito</p>
+    <!-------- Conócenos------>
+    <section id="Conocenos" class="Conocenos">
+      <div class="container">
+        <div class="about-text-box">
+          <h1 align="center">Conócenos</h1>
+          <p align="center">Somos una tienda salvadoreña online de trajes de baño, artículos playeros y ropa
+            para
+            mujeres.
+            Creada con mucha dedicación el 9 de octubre del 2020 y operada vía Instagram, ofrecemos las
+            piezas de baño
+            más lindas y delicadas al precio que todas merecemos. Con cobertura de envíos a nivel nacional,
+            un amplio
+            catálogo de piezas y la mejor atención al cliente, sentirás que por fin has encontrado la retail
+            store que
+            tanto buscabas.</p>
+          <p align="center">HIBISCUS SWIMWEAR es para ti, para mí y para todas. Siempre es un gusto atenderte.
+          </p>
+          <p align="center">¡Gracias por formar partr de nuestro emprendimiento!</p>
           <br>
-          <a href="https://www.facebook.com/svhibiscus" target="_blank"><i
-              class="fa fa-facebook-official w3-hover-opacity w3-large"></i> HIBISCUS
-            SWIMWEAR</a>
-          <br>
-          <a href="https://www.instagram.com/svhibiscus/" target="_blank"><i
-              class="fa fa-instagram w3-hover-opacity w3-large"></i> svhibiscus
 
-          </a>
-        </div>
-      </div>
-    </footer>
+          <!-------- Entregas------>
+          <section id="Entregas" class="Entregas">
+            <div class="container">
+              <div class="about-text-box">
+                <h1 align="center">Entregas</h1>
+                <p align="center">Recuerda que hacemos entregas inmediatas en Multiplaza, La Gran Vía, Plaza
+                  Merliot y
+                  Las Cascadas
+                  sin costo
+                  adicional</p>
+                <br>
+                <p align="center">Tarifas de envío según la zona:</p>
+                <p align="center">San Salvador, Mejicanos, Ayutuxtepeque, Cuscatancingo, Soyapango, Antiguo
+                  Cuscatlán y
+                  Santa Tecla
+                  $3</p>
+                <p align="center">San Marcos, Apopa y Nuevo Cuscatlán $4</p>
+                <p align="center">Ilopango y zona paracentral occidental $5</p>
+                <p align="center">Lourdes y Zaragoza $6</p>
+                <p align="center">San José Villanueva y zona oriental $7</p>
+                <br>
+                <p align="center">Las entregas a la zona oriental se realizan los días martes y a la zona
+                  occidental los
+                  días
+                  jueves. Recuerda
+                  agendar tu pedido con al menos 24 horas de anticipación.
+                </p>
+                <br>
 
-    <div class="w3-black w3-center w3-padding-24">Powered by Hibuscus El Salvador</a>
-    </div>
-    <!-- Contenido del final de la página -->
-  </div>
+                <!-------- Pago------>
+                <section id="Pago" class="Pago">
+                  <div class="container">
+                    <div class="about-text-box">
+                      <h1 align="center">Pago</h1>
+                      <p align="center">Contamos con dos métodos de pago: en efectivo y por transferencia bancaria
+                        a
+                        Banco
+                        Agrícola o Davivienda. Recuerda que el pago en efectivo es contra entrega, mientras que el
+                        pago
+                        por transferencia
+                        bancaria debe realizarse al menos una hora antes de entregarte el producto.
+                      </p>
+                      <br>
 
-  <!-- Suscripción -->
-  <div id="newsletter" class="w3-modal">
-    <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
-      <div class="w3-container w3-white w3-center">
-        <i onclick="document.getElementById('newsletter').style.display='none'"
-          class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
-        <h2 class="w3-wide">SUSCRÍBETE</h2>
-        <p>Únete a nuestra lista de correo para recibir actualizaciones sobre nuevas
-          colecciones
-          y ofertas especiales.</p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
-        <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom"
-          onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
-      </div>
-    </div>
-  </div>
+                      <!-------- Devoluciones------>
+                      <section id="Cambio" class="Cambio">
+                        <div class="container">
+                          <div class="about-text-box">
+                            <h1 align="center">Devoluciones</h1>
+                            <p align="center">Por la seguridad e higiene de todos nuestros clientes, las piezas
+                              que son
+                              adquiridas no pueden
+                              ser devueltas o en su defecto, ser cambiadas por otro artículo. Te recomendamos que
+                              antes
+                              de aquirir una prenda
+                              te comuniques con nosotros para poder brindarte asesoramiento sobre las medidas
+                              exactas de
+                              cada pieza. En HIBISCUS
+                              estamos comprometidos con tu bienestar.
+                            </p>
+                            <br>
 
-  <script src="{{url_for('static', filename='cart.js')}}"></script>
-  <script src="{{url_for('static', filename='preload.js')}}"></script>
-  <script src="{{url_for('static', filename='main.js')}}"></script>
-  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+                            <!-- Sección de suscripción -->
+                            <div class="w3-container w3-black w3-padding-32">
+                              <h1>Subscríbete</h1>
+                              <p>Para obtener ofertas especiales y enterárte de las novedades:</p>
+                              <p><input class="w3-input w3-border" type="text" placeholder="Ingresa tu e-mail"
+                                  style="width:100%"></p>
+                              <button type="button" class="w3-button w3-red w3-margin-bottom">Subscríbete</button>
+                            </div>
+                            <!-- Pie de página -->
+                            <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+                              <div class="w3-row-padding">
+                                <div class="w3-col s4">
+                                  <h4>Contáctanos</h4>
+                                  <p>¿Tienes preguntas? Te responderemos lo más pronto posible.</p>
+                                  <form action="/action_page.php" target="_blank">
+                                    <p><input class="w3-input w3-border" type="text" placeholder="Nombre" name="Nombre"
+                                        required></p>
+                                    <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email"
+                                        required></p>
+                                    <p><input class="w3-input w3-border" type="text" placeholder="Asunto" name="Asunto"
+                                        required></p>
+                                    <p><input class="w3-input w3-border" type="text" placeholder="Mensaje"
+                                        name="Mensaje" required></p>
+                                    <button type="submit" class="w3-button w3-block w3-black">Enviar</button>
+                                  </form>
+                                </div>
+
+                                <div class="w3-col s4">
+                                  <h4>Acerca de</h4>
+                                  <p><a href="./Conócenos">Conócenos</a></p>
+                                  <p><a href="./#Entregas">Entregas</a></p>
+                                  <p><a href="./#Pago">Pago</a></p>
+                                  <p><a href="./#Devoluciones">Devoluciones</a></p>
+                                </div>
+
+                                <div class="w3-col s4 w3-justify">
+                                  <h4>Nosotros</h4>
+                                  <p><i class="fa fa-fw fa-map-marker"></i>Santa Tecla, El Salvador</p>
+                                  <p><i class="fa fa-fw fa-phone"></i>503 7682 6922</p>
+                                  <a href="mailto:hibiscusswimsv@gmail.com"><i class="fa fa-fw fa-envelope"></i>
+                                    hibiscusswimsv@gmail.com</a>
+                                  <h4>Aceptamos</h4>
+                                  <p><i class="fa fa-money aria-hidden=true"></i> Efectivo</p>
+                                  <p><i class="fa fa-fw fa-credit-card"></i> Tarjeta de crédito</p>
+                                  <br>
+                                  <a href="https://www.facebook.com/svhibiscus" target="_blank"><i
+                                      class="fa fa-facebook-official w3-hover-opacity w3-large"></i> HIBISCUS
+                                    SWIMWEAR</a>
+                                  <br>
+                                  <a href="https://www.instagram.com/svhibiscus/" target="_blank"><i
+                                      class="fa fa-instagram w3-hover-opacity w3-large"></i> svhibiscus
+
+                                  </a>
+                                </div>
+                              </div>
+                            </footer>
+
+                            <div class="w3-black w3-center w3-padding-24">Powered by Hibiscus El Salvador</a>
+                            </div>
+
+                            <!-- Contenido del final de la página -->
+                          </div>
+
+                          <!-- Suscripción -->
+                          <div id="newsletter" class="w3-modal">
+                            <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+                              <div class="w3-container w3-white w3-center">
+                                <i onclick="document.getElementById('newsletter').style.display='none'"
+                                  class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+                                <h2 class="w3-wide">SUSCRÍBETE</h2>
+                                <p>Únete a nuestra lista de correo para recibir actualizaciones sobre nuevas
+                                  colecciones
+                                  y ofertas especiales.</p>
+                                <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+                                <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom"
+                                  onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+                              </div>
+                            </div>
+                          </div>
+
+                          <script src="/static/cart.js"></script>
+                          <script src="{{url_for('static', filename='preload.js')}}"></script>
+                          <script src="{{url_for('static', filename='main.js')}}"></script>
+                          <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 
 </html>
