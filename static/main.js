@@ -37,7 +37,7 @@ function checkLogin() {
                 var role = getUserRole(user, password, userArray)
                 createSessionUser(user, password, role)
                 //window.location.href = "http://localhost:5000/dashboard";
-                window.location.href = "http://heroku:5000/dashboard";
+                window.location.href = "https://manganeso.herokuapp.com/dashboard";
             } else {
                 alert("user or password are not correct");
             }
@@ -117,7 +117,7 @@ function registerNewUser() {
     localStorage.setItem("aUserArray", JSON.stringify(userArray));
 
     //window.location.href = "http://localhost:5000/login"
-    window.location.href = "http://heroku:5000/login";
+    window.location.href = "https://manganeso.herokuapp.com/login";
 }
 
 /*
