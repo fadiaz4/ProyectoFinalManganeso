@@ -43,5 +43,10 @@ def checkout():
     return render_template("checkout.html")
 
 
+@app.route("/swimmwear2")
+def swimmwear2():
+    return render_template("swimmwear2.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True)
