@@ -25,23 +25,21 @@
 </style>
 
 <body class="w3-content" style="max-width:1200px">
+
   <!-- Sidebar -->
-  <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:300px" id="mySidebar">
+  <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
     <div class="w3-container w3-display-container w3-padding-16">
       <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-      <div class="nav-brand">
-        <a href="index.html">
-          <img src="/static/images/hibiscusSV.jpg" style="z-index:3;width:7rem" />
-        </a>
-      </div>
-      <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
-        <a href="./#Conócenos" class="w3-bar-item w3-button">Nosotros</a>
-        <a href="{{url_for('swimmwear')}}" class="w3-bar-item w3-button">Swimmwear</a>
-        <a href="{{url_for('otros')}}" class="w3-bar-item w3-button">Otros</a>
-      </div>
-      <a href="#footer" class="w3-bar-item w3-button w3-padding">Contáctanos</a>
-      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding"
-        onclick="document.getElementById('newsletter').style.display='block'">Suscríbete</a>
+      <h3 class="w3-wide"><b><img src="/static/images/hibiscusSV.png"></b></h3>
+    </div>
+    <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+      <a href="./#Conócenos" class="w3-bar-item w3-button">Nosotros</a>
+      <a href="{{url_for('swimmwear')}}" class="w3-bar-item w3-button">Swimmwear</a>
+      <a href="{{url_for('otros')}}" class="w3-bar-item w3-button">Otros</a>
+    </div>
+    <a href="#footer" class="w3-bar-item w3-button w3-padding">Contáctanos</a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding"
+      onclick="document.getElementById('newsletter').style.display='block'">Suscríbete</a>
   </nav>
 
   <!-- Menú de arriba en pantallas pequeñas -->
