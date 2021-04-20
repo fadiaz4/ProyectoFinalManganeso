@@ -44,7 +44,7 @@
 <!-- Encabezado superior -->
 <header class="w3-container w3-xlarge">
     <div class="nav">
-        <a href="{{url_for('index')}}">Pagina Principal</a>
+        <a href="{{url_for('index')}}">Hibiscus El Salvador</a>
         <div id="headerM">
             <p class="w3-right">
                 <a href="{{url_for('cart')}}"><i class="fa fa-shopping-cart w3-margin-right"></i></a>
@@ -86,7 +86,7 @@
             <p><button onclick="displayCost()" class="btn-total" type="button">Mostrar el total</button></p>
         </div>
         <div class="card-details">
-            <p>Paga usando tu tarjeta de credito o debito</p>
+            <p>Paga usando tu tarjeta de crédito o débito</p>
             <div class="card-num-field-group">
                 <label>Numero de tarjeta</label>
                 <input type="text" class="card-num-field" placeholder="xxxx-xxxx-xxxx-xxxx">
@@ -96,7 +96,7 @@
                 <input type="password" class="cvc-field" placeholder="xxx">
             </div>
             <div class="date-field-group">
-                <label>Fecha de expiracion</label>
+                <label>Fecha de expiración</label>
                 <input type="text" class="date-field" placeholder="mm">
                 <input type="text" class="date-field" placeholder="yyyy">
             </div>
@@ -106,20 +106,20 @@
                 <input type="text" class="name-field" placeholder="Nombre completo del titular">
             </div>
             <div class="mail-field-group">
-                <label>Correo electronico</label>
-                <input type="text" class="mail-field" placeholder="Recuerda escribir bien tu correo electronico">
+                <label>Correo electrónico</label>
+                <input type="text" class="mail-field" placeholder="Recuerda escribir bien tu correo electrónico">
             </div>
             <div class="number-field-group">
-                <label>Numero telefonico</label>
-                <input type="text" class="number-field" placeholder="Numero para concretar entrega">
+                <label>Numero telefónico</label>
+                <input type="text" class="number-field" placeholder="Número telefónico para concretar entrega">
             </div>
             <p><button onclick="confirmation()" type="button" class="pay-btn">Completar Pago</button></p>
             <script>
                 function confirmation() {
                     var txt;
-                    var r = confirm("Quieres confirmar tu pago?");
+                    var r = confirm("Presiona aceptar para confirmar tu pedido");
                     if (r == true) {
-                        var a = confirm("Muchas gracias por su compra, sera redireccionado en momentos al whatsapp de Hibiscus para concretar su envio!");
+                        var a = confirm("¡ gracias por su compra, sera redireccionado en momentos al whatsapp de Hibiscus para concretar su envío!");
                         if (a == true) {
                             setTimeout(function redireccionar() { window.location.href = "https://wa.me/50376826922?text=Acabo%20de%20realizar%20una%20compra%20mi%20nombre%20es:"; }, 8000);
                             sessionStorage.clear();
