@@ -36,9 +36,9 @@
         </a>
       </div>
       <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
-        <a href="#" class="w3-bar-item w3-button">Nosotros</a>
-        <a href="/templates/swimmwear.html" class="w3-bar-item w3-button">Swimmwear</a>
-        <a href="#" class="w3-bar-item w3-button">Otros</a>
+        <a href="./#Conócenos" class="w3-bar-item w3-button">Nosotros</a>
+        <a href="{{url_for('swimmwear')}}" class="w3-bar-item w3-button">Swimmwear</a>
+        <a href="{{url_for('otros')}}" class="w3-bar-item w3-button">Otros</a>
       </div>
       <a href="#footer" class="w3-bar-item w3-button w3-padding">Contáctanos</a>
       <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding"
@@ -68,11 +68,11 @@
     <!-- Encabezado superior -->
     <header class="w3-container w3-xlarge">
       <div class="nav">
-        <a href="/templates/index.html">Pagina Principal</a>
+        <a href="./">Hibiscus El Salvador</a>
         <div id="headerM">
           <p class="w3-right">
-            <a href="/templates/cart.html"><i class="fa fa-shopping-cart w3-margin-right"></i></a>
-            <a href="{{url_for('login')}}">Login</a>
+            <a href="{{url_for('cart')}}"><i class="fa fa-shopping-cart w3-margin-right"></i></a>
+            <a href="{{url_for('login')}}"><i class="fa fa-user w3-margin-right"></i></a>
           </p>
         </div>
       </div>
