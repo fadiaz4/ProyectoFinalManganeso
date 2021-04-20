@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <title>Hibiscus El Salvador</title>
 <meta charset="UTF-8">
@@ -31,14 +32,13 @@
     <div class="w3-container w3-display-container w3-padding-16">
       <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
       <div class="nav-brand">
-        <a href="index.html">
+        <a href="{{url_for('index')}}">
           <img src="/static/images/hibiscusSV.jpg" style="z-index:3;width:7rem" />
         </a>
       </div>
       <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
         <a href="#" class="w3-bar-item w3-button">Nosotros</a>
-        <a href="./#Conócenos" class="w3-bar-item w3-button">Nosotros</a>
-        <a href="{{url_for('swimmwear')}}" class="w3-bar-item w3-button">Swimmwear</a>
+        <a href="{{url_for('Swimmwear')}}" class="w3-bar-item w3-button">Swimmwear</a>
         <a href="{{url_for('otros')}}" class="w3-bar-item w3-button">Otros</a>
       </div>
       <a href="#footer" class="w3-bar-item w3-button w3-padding">Contáctanos</a>
@@ -69,11 +69,11 @@
     <!-- Encabezado superior -->
     <header class="w3-container w3-xlarge">
       <div class="nav">
-        <a href="/templates/index.html">Pagina Principal</a>
+        <a href="{{url_for('index')}}">Pagina Principal</a>
         <div id="headerM">
           <p class="w3-right">
             <a href="{{url_for('cart')}}"><i class="fa fa-shopping-cart w3-margin-right"></i></a>
-            <a href="{{url_for('login')}}"><i class="fa fa-user w3-margin-right"></i></a>
+            <a href="{{url_for('login')}}">Login</a>
           </p>
         </div>
       </div>
@@ -92,8 +92,8 @@
         </div>
         <button onclick="clearAll()"> Eliminar todos<i
             class="fa fa-trash fa-2x w3-margin-rigth w3-margin-left"></i></button>
-        <a href="{{url_for('static', filename='checkout.js')}}" target="_blank" class="w3-bar-item w3-button">Procede a
-          pagar<i class="fa fa-credit-card-alt fa-4x w3-margin-rigth w3-margin-left"></i></a>
+        <a href="{{url_for('checkout')}}" target="_blank" class="w3-bar-item w3-button">Procede a pagar<i
+            class="fa fa-credit-card-alt fa-4x w3-margin-rigth w3-margin-left"></i></a>
       </div>
 
       <!-- Sección de suscripción -->
@@ -103,6 +103,22 @@
         <p><input class="w3-input w3-border" type="text" placeholder="Ingresa tu e-mail" style="width:100%"></p>
         <button type="button" class="w3-button w3-red w3-margin-bottom">Subscríbete</button>
       </div>
+
+      <!-- Suscripción -->
+      <div id="newsletter" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+          <div class="w3-container w3-white w3-center">
+            <i onclick="document.getElementById('newsletter').style.display='none'"
+              class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+            <h2 class="w3-wide">SUSCRÍBETE</h2>
+            <p>Únete a nuestra lista de correo para recibir actualizaciones sobre new arrivals y ofertas especiales.</p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+            <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom"
+              onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+          </div>
+        </div>
+      </div>
+
       <!-- Pie de página -->
       <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
         <div class="w3-row-padding">
@@ -120,59 +136,32 @@
 
           <div class="w3-col s4">
             <h4>Acerca de</h4>
-            <p><a href="./Conócenos">Conócenos</a></p>
-            <p><a href="./#Entregas">Entregas</a></p>
-            <p><a href="./#Pago">Pago</a></p>
-            <p><a href="./#Devoluciones">Devoluciones</a></p>
+            <p><a href="http://127.0.0.1:5502/templates/index.html#Conocenos">Conócenos</a></p>
+            <p><a href="http://127.0.0.1:5502/templates/index.html#Entregas">Entregas</a></p>
+            <p><a href="http://127.0.0.1:5502/templates/index.html#Pago">Pago</a></p>
+            <p><a href="http://127.0.0.1:5502/templates/index.html#Cambio">Devolución y cambio</a></p>
           </div>
 
           <div class="w3-col s4 w3-justify">
             <h4>Nosotros</h4>
             <p><i class="fa fa-fw fa-map-marker"></i>Santa Tecla, El Salvador</p>
             <p><i class="fa fa-fw fa-phone"></i>503 7682 6922</p>
-            <a href="mailto:hibiscusswimsv@gmail.com"><i class="fa fa-fw fa-envelope"></i>
-              hibiscusswimsv@gmail.com</a>
-            <h4>Aceptamos</h4>
-            <p><i class="fa fa-money aria-hidden=true"></i> Efectivo</p>
-            <p><i class="fa fa-fw fa-credit-card"></i> Tarjeta de crédito</p>
-            <br>
-            <a href="https://www.facebook.com/svhibiscus" target="_blank"><i
-                class="fa fa-facebook-official w3-hover-opacity w3-large"></i> HIBISCUS
-              SWIMWEAR</a>
-            <br>
-            <a href="https://www.instagram.com/svhibiscus/" target="_blank"><i
-                class="fa fa-instagram w3-hover-opacity w3-large"></i> svhibiscus
-
-            </a>
+            <a href="mailto:hibiscusswimsv@gmail.com"><i class="fa fa-fw fa-envelope w3-hover-opacity w3-large"></i>
+              hibiscusswimsv@gmail.com</>
+              <h4>Aceptamos</h4>
+              <p><i class="fa fa-money" aria-hidden="true"></i> Efectivo</p>
+              <p><i class="fa fa-fw fa-credit-card"></i> Tarjeta de crédito</p>
+              <br>
+              <a href="https://www.facebook.com/svhibiscus" target="_blank"><i
+                  class="fa fa-facebook-official w3-hover-opacity w3-large"></i></a>
+              <a href="https://www.instagram.com/svhibiscus/" target="_blank"><i
+                  class="fa fa-instagram w3-hover-opacity w3-large"></i></a>
           </div>
         </div>
       </footer>
+      <script src="{{url_for('static', filename='cart.js')}}"></script>
+      <script src="{{url_for('static', filename='preload.js')}}"></script>
+      <script src="{{url_for('static', filename='main.js')}}"></script>
 
-      <div class="w3-black w3-center w3-padding-24">Powered by Hibuscus El Salvador</a>
-      </div>
 
-      <!-- Contenido del final de la página -->
-  </div>
-
-  <!-- Suscripción -->
-  <div id="newsletter" class="w3-modal">
-    <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
-      <div class="w3-container w3-white w3-center">
-        <i onclick="document.getElementById('newsletter').style.display='none'"
-          class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
-        <h2 class="w3-wide">SUSCRÍBETE</h2>
-        <p>Únete a nuestra lista de correo para recibir actualizaciones sobre nuevas
-          colecciones
-          y ofertas especiales.</p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
-        <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom"
-          onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
-      </div>
-    </div>
-  </div>
-
-  <script src="{{url_for('static', filename='cart.js')}}"></script>
-  <script src="{{url_for('static', filename='preload.js')}}"></script>
-  <script src="{{url_for('static', filename='main.js')}}"></script>
-  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-</body>
+    </body>
