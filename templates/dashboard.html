@@ -4,35 +4,27 @@
             <td>
                 <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
                     <div>
-                        <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This
-                            field is required.</label>
-                        <input type="text" name="fullName" id="fullName">
+                        <label>Correlativo</label>
+                        <input type="number" name="correlativob" id="correlativob">
                     </div>
                     <div>
-                        <label>EMP Code</label>
-                        <input type="text" name="empCode" id="empCode">
+                        <label>Imagen</label><label class="validation-error hide" id="fullNameValidationError">Debe
+                            describirlo</label>
+                        <input type="text" name="nombreb" id="nombreb">
                     </div>
                     <div>
-                        <label>Salary</label>
-                        <input type="text" name="salary" id="salary">
-                    </div>
-                    <div>
-                        <label>City</label>
-                        <input type="text" name="city" id="city">
-                    </div>
-                    <div class="form-action-buttons">
-                        <input type="submit" value="Submit">
+                        <label>Precio</label>
+                        <input type="number" name="preciob" id="preciob">
                     </div>
                 </form>
             </td>
             <td>
-                <table class="list" id="employeeList">
+                <table class="lista" id="trajedebañoslista">
                     <thead>
                         <tr>
-                            <th>Full Name</th>
-                            <th>EMP Code</th>
-                            <th>Salary</th>
-                            <th>City</th>
+                            <th>NombreCompleto</th>
+                            <th>Imagen</th>
+                            <th>Precio</th>
                             <th></th>
                         </tr>
                     </thead>
