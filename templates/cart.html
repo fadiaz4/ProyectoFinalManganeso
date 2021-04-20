@@ -92,8 +92,8 @@
         </div>
         <button onclick="clearAll()"> Eliminar todos<i
             class="fa fa-trash fa-2x w3-margin-rigth w3-margin-left"></i></button>
-        <a href="{{url_for('checkout')}}" target="_blank" class="w3-bar-item w3-button">Procede a pagar<i
-            class="fa fa-credit-card-alt fa-4x w3-margin-rigth w3-margin-left"></i></a>
+        <a href="{{url_for('static', filename='checkout.js')}}" target="_blank" class="w3-bar-item w3-button">Procede a
+          pagar<i class="fa fa-credit-card-alt fa-4x w3-margin-rigth w3-margin-left"></i></a>
       </div>
 
       <!-- Sección de suscripción -->
@@ -171,7 +171,7 @@
     </div>
   </div>
 
-  <script src="/static/cart.js"></script>
+  <script src="{{url_for('static', filename='cart.js')}}"></script>
   <script src="{{url_for('static', filename='preload.js')}}"></script>
   <script src="{{url_for('static', filename='main.js')}}"></script>
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
