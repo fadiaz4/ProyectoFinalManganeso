@@ -36,8 +36,11 @@ function checkLogin() {
                 //need a method to get the role and send it into createSessionUser below
                 var role = getUserRole(user, password, userArray)
                 createSessionUser(user, password, role)
-                //window.location.href = "http://localhost:5000/dashboard";
-                window.location.href = "https://manganeso.herokuapp.com/dashboard";
+                if (role == "admin") {
+                    //window.location.href = "http://localhost:5000/dashboard";
+                    window.location.href = "https://manganeso.herokuapp.com/dashboard";
+                    } else {
+                      window.location.href = "https://manganeso.herokuapp.com/cart";  
             } else {
                 alert("user or password are not correct");
             }
