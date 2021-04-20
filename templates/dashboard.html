@@ -241,7 +241,7 @@
             //DELETING TABLE STARTS HERE
             $("#remove").click(function () {
 
-                if (!confirm("¿Está seguro que desea vaciar la tabla?", "")) return;;
+                if (!confirm("¿Está seguro que desea vaciar la tabla?", "")) return;
                 db.transaction(function (transaction) {
                     var sql = "DROP TABLE items";
                     transaction.executeSql(sql, undefined, function () {
@@ -353,7 +353,7 @@
 
     </script>
 
-    <script type="text/javascript" src="static/jquery.js"></script>
+    <script src="{{url_for('static', filename='jquery.js')}}"></script>
 
 
 </body>
