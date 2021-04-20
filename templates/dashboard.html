@@ -241,11 +241,11 @@
             //DELETING TABLE STARTS HERE
             $("#remove").click(function () {
 
-                if (!confirm("¿Está seguro que desea vaciar la tabla?", "")) return;
+                if (!confirm("Confirme que desea vaciar la tabla", "")) return;;
                 db.transaction(function (transaction) {
                     var sql = "DROP TABLE items";
                     transaction.executeSql(sql, undefined, function () {
-                        alert("La tabla se vació correctamente")
+                        alert("La tabla fue eliminada correctamente")
                     }, function (transaction, err) {
                         alert(err.message);
                     })
@@ -298,7 +298,7 @@
                             $("#itemlist").append('<tr><td colspan="3" align="center">No Item Found</td></tr>');
                         }
                     }, function (transaction, err) {
-                        alert('No se encontró la tabla. Oprima en "crear tabla" para crearla en este momento');
+                        alert('La tabla no fue creada. Click en "Crear Tabla" para crear la tabla ahora');
                     })
                 })
 
@@ -309,14 +309,14 @@
 
                 setTimeout(function () {
                     $(".deleteitem").click(function () {
-                        var sure = confirm("¿Está seguro que desea eliminar este producto?");
+                        var sure = confirm("Confirme que desea eliminar este producto");
                         if (sure === true) {
                             var id = $(this).data("id");
                             db.transaction(function (transaction) {
                                 var sql = "DELETE FROM items where id=?";
                                 transaction.executeSql(sql, [id], function () {
                                     $("#del" + id).fadeOut();
-                                    alert("Producto borrado satisfactoriamente");
+                                    alert("Producto eliminado correctamente");
                                 }, function (transaction, err) {
                                     alert(err.message);
                                 })
@@ -325,14 +325,14 @@
                     })
 
                     $(".updateitem").click(function () {
-                        var qty = prompt("Inserte un nuevo precio", 1);
+                        var qty = prompt("Ingresa el nuevo precio", 1);
                         if (qty !== null) {
                             var id = $(this).data("id");
                             db.transaction(function (transaction) {
                                 var sql = "UPDATE items SET quantity=? where id=?";
                                 transaction.executeSql(sql, [qty, id], function () {
                                     $("#newqty" + id).html(qty);
-                                    alert("Producto actualizado satisfactoriamente");
+                                    alert("Producto actualizado correctamente");
                                 }, function (transaction, err) {
                                     alert(err.message);
                                 })
@@ -345,6 +345,7 @@
 
             }
             //END OF loadData() function
+
 
 
 
