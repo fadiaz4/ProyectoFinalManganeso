@@ -36,8 +36,8 @@ function checkLogin() {
                 //need a method to get the role and send it into createSessionUser below
                 var role = getUserRole(user, password, userArray)
                 createSessionUser(user, password, role)
-                window.location.href = "http://localhost:5000/dashboard";
-                //window.location.href = "http://heroku:5000/dashboard";
+                //window.location.href = "http://localhost:5000/dashboard";
+                window.location.href = "http://heroku:5000/dashboard";
             } else {
                 alert("user or password are not correct");
             }
@@ -116,8 +116,8 @@ function registerNewUser() {
 
     localStorage.setItem("aUserArray", JSON.stringify(userArray));
 
-    window.location.href = "http://localhost:5000/login"
-    //window.location.href = "http://heroku:5000/login";
+    //window.location.href = "http://localhost:5000/login"
+    window.location.href = "http://heroku:5000/login";
 }
 
 /*
