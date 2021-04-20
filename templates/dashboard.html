@@ -292,7 +292,7 @@
                                 var item = row.item;
                                 var id = row.id;
                                 var quantity = row.quantity;
-                                $("#itemlist").append('<tr id="del' + id + '"><td>' + id + '</td><td>' + item + '</td><td id="newqty' + id + '">' + "$ " + quantity + '</td><td><a href="#" class="btn btn-danger deleteitem" data-id="' + id + '">Delete</a> <a href="#" class="btn btn-primary updateitem" data-id="' + id + '">Update</a></td></tr>');
+                                $("#itemlist").append('<tr id="del' + id + '"><td>' + id + "||" + '</td><td>' + item + "||" + '</td><td id="newqty' + id + '">' + "$ " + quantity + "||" + '</td><td><a href="#" class="btn btn-danger deleteitem" data-id="' + id + '">Delete</a> <a href="#" class="btn btn-primary updateitem" data-id="' + id + '">Update</a></td></tr>');
                             }
                         } else {
                             $("#itemlist").append('<tr><td colspan="3" align="center">No Item Found</td></tr>');
