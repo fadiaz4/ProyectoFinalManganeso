@@ -79,18 +79,18 @@
         </header>
 
         <body style="margin:30px">
-
-            <h2>Dashboard Admin</h2><br>
-            <p align="center"><small>En esta tabla podrás ingresar nuevos productos con nombre y precio
+            <h2>Dashboard</h2>
+            <p align="left"><small>En esta tabla podrás ingresar tus compras con fecha y monto para llevar un registro
                 </small></p>
+
 
             <div class="container">
 
                 <div class="row">
                     <form>
                         <fieldset>
-                            <legend>Nombre del producto</legend>
-                            <input type="text" class="form-control" name="" id="item">
+                            <legend>Fecha</legend>
+                            <input type="date" class="form-control" name="" id="item">
 
                             <legend>Precio</legend>
                             <input type="number" class="form-control" id="quantity" name="">
@@ -103,7 +103,7 @@
 
                             <button type="button" id="list" class="btn btn-success">Mostrar historial</button>
                             <p><small>
-                                    Notas: <br> -La tabla debe ser creada antes de ingresar un producto
+                                    Notas: <br> -La tabla debe ser creada antes de ingresar una compra
                                     <br>-Al eliminar una tabla por completo solo debe recargar la página para poder
                                     reiniciarla
                                 </small></p>
@@ -209,7 +209,7 @@
 
     <script type="text/javascript">
 
-        var db = openDatabase("itemDB", "1.0", "itemDB", 65535); // itemDB is the database name
+        var db = openDatabase("itemDB", "2.0", "itemDB", 65535); // itemDB is the database name
 
 
         $(function () {
