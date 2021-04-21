@@ -48,5 +48,15 @@ def swimmwear2():
     return render_template("swimmwear2.html")
 
 
+@app.route("/dashboardadmin")
+def dashboardadmin():
+    return render_template("dashboardadmin.html")
+
+
+@app.route("/dashboardclient")
+def dashboardclient():
+    return render_template("dashboardclient.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True)
