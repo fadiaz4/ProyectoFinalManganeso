@@ -51,6 +51,8 @@ function checkLogin() {
     } else {
         alert("user must not be empty");
         }
+     }
+   }
 }
 
 function checkLoginInfo(user, password, userArray) {
