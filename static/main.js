@@ -38,21 +38,22 @@ function checkLogin() {
                 createSessionUser(user, password, role)
                 if (role == "admin") {
                     //window.location.href = "http://localhost:5000/dashboard";
-                    window.location.href = "https://manganeso.herokuapp.com/dashboard";
-                } else {
-                    window.location.href = "https://manganeso.herokuapp.com/dashboard";
-                }
-             } else {
-                 alert("user or password are not correct");
-             }
-         } else {
-             alert("password must not be empty");
-             }
+                    window.location.href = "https://manganeso.herokuapp.com/dashboardadmin";
+                    } else {
+                      window.location.href = "https://manganeso.herokuapp.com/dashboardclient";  
+            } else {
+                alert("user or password are not correct");
+            }
+
+        } else {
+            alert("password must not be empty");
+        }
     } else {
         alert("user must not be empty");
-        }
     }
+
 }
+
 function checkLoginInfo(user, password, userArray) {
     if (userArray !== null && userArray.length > 0) {
         for (var i = 0; i < userArray.length; i++) {
