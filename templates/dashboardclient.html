@@ -80,7 +80,11 @@
 
         <body style="margin:30px">
 
-            <p align="center">En esta tabla podrás ingresar tus compras para calcular cuanto has gastado</p>
+            <div class="row row-2">
+                <h2>Dashboard Admin</h2><br>
+                <p align="center"><small>En esta tabla podrás ingresar nuevos productos con nombre y precio
+                    </small></p>
+            </div>
 
             <div class="container">
 
@@ -100,7 +104,11 @@
                             <button type="button" id="remove" class="btn btn-danger">Eliminar Tabla</button>
 
                             <button type="button" id="list" class="btn btn-success">Mostrar historial</button>
-                            <p><small><b>Nota: </b>La tabla debe ser creada antes de ingresar un producto</small></p>
+                            <p><small>
+                                    Notas: <br> -La tabla debe ser creada antes de ingresar un producto
+                                    <br>-Al eliminar una tabla por completo solo debe recargar la página para poder
+                                    reiniciarla
+                                </small></p>
                         </fieldset>
                     </form>
 
@@ -291,7 +299,7 @@
                             $("#itemlist").append('<tr><td colspan="3" align="center">No Item Found</td></tr>');
                         }
                     }, function (transaction, err) {
-                        alert('La tabla no fue creada. Click en "Crear Tabla" para crear la tabla ahora');
+                        alert('La tabla no ha sido creada. Click en "Crear Tabla" para crear la tabla ahora');
                     })
                 })
 
