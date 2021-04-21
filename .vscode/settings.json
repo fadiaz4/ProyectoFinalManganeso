@@ -11,6 +11,5 @@
     "python.formatting.provider": "black",
     //"editor.formatOnPaste": true,
     "editor.formatOnSave": true,
-    "editor.formatOnType": true,
-    "python.pythonPath": "C:\\Users\\fatim\\AppData\\Local\\Programs\\Python\\Python38\\python.exe"
+    "editor.formatOnType": true
 }
