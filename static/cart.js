@@ -189,7 +189,7 @@ function displayCart() {
         productContainer.innerHTML = '';
         Object.values(cartItems).map((item, _index) => {
             productContainer.innerHTML +=
-                `<div class="product"><i class="fa fa-dot-circle-o" aria-hidden="true"></i><img src="/static/images/${item.tag}.PNG" />
+                `<div class="product"><i class="fa fa-dot-circle-o" aria-hidden="true"></i><img src="/static/images/${item.tag}.png" />
                     <span class="sm-hide">${item.name}</span>
                 </div>
                 <div class="price sm-hide">$${item.price}.00</div>
