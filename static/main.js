@@ -29,8 +29,6 @@ function checkLogin() {
                 //need a method to get the role and send it into createSessionUser below
                 var role = getUserRole(user, password, userArray)
                 createSessionUser(user, password, role)
-                //window.location.href = "http://localhost:5000/dashboardadmin";
-                window.location.href = "https://hibiscussv.herokuapp.com/dashboardadmin";
                 if (role == "admin") {
                     //window.location.href = "http://localhost:5000/dashboardadmin";
                     window.location.href = "https://hibiscussv.herokuapp.com/dashboardadmin";
@@ -84,6 +82,7 @@ function createSessionUser(user, password, role) {
 ***** login functionality end
 */
 
+
 /*
 *** register functionality begin
 */
@@ -111,7 +110,7 @@ function registerNewUser() {
     localStorage.setItem("aUserArray", JSON.stringify(userArray));
 
     //window.location.href = "http://localhost:5000/login"
-    window.location.href = "https://manganeso.herokuapp.com/login";
+    window.location.href = "https://hibiscussv.herokuapp.com/login";
 }
 
 /*
