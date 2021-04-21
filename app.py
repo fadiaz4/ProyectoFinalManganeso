@@ -33,11 +33,6 @@ def cart():
     return render_template("cart.html")
 
 
-@app.route("/dashboard")
-def dashboard():
-    return render_template("dashboard.html")
-
-
 @app.route("/checkout")
 def checkout():
     return render_template("checkout.html")
