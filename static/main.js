@@ -41,7 +41,8 @@ function checkLogin() {
                     window.location.href = "https://manganeso.herokuapp.com/dashboard";
                 } else {
                     window.location.href = "https://manganeso.herokuapp.com/dashboard";  
-            } else {
+            } 
+                }else {
                 alert("user or password are not correct");
                 }
         } else {
