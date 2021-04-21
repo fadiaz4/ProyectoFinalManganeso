@@ -30,12 +30,12 @@ function checkLogin() {
                 var role = getUserRole(user, password, userArray)
                 createSessionUser(user, password, role)
                 //window.location.href = "http://localhost:5000/dashboardadmin";
-                window.location.href = "https://manganeso.herokuapp.com/dashboardadmin";
+                window.location.href = "https://hibiscussv.herokuapp.com/dashboardadmin";
                 if (role == "admin") {
                     //window.location.href = "http://localhost:5000/dashboardadmin";
-                    window.location.href = "https://manganeso.herokuapp.com/dashboardadmin";
+                    window.location.href = "https://hibiscussv.herokuapp.com/dashboardadmin";
                 } else {
-                    window.location.href = "https://manganeso.herokuapp.com/dashboardclient";
+                    window.location.href = "https://hibiscussv.herokuapp.com/dashboardclient";
                 }
             } else {
                 alert("password must not be empty");
