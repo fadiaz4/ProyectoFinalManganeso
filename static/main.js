@@ -40,16 +40,16 @@ function checkLogin() {
                     //window.location.href = "http://localhost:5000/dashboard";
                     window.location.href = "https://manganeso.herokuapp.com/dashboard";
                 } else {
-                    window.location.href = "https://manganeso.herokuapp.com/dashboard";  
-            } 
-                }else {
-                alert("user or password are not correct");
+                    window.location.href = "https://manganeso.herokuapp.com/dashboard";
                 }
-        } else {
-                alert("password must not be empty");
-            }
+             } else {
+                 alert("user or password are not correct");
+             }
+         } else {
+             alert("password must not be empty");
+             }
     } else {
-            alert("user must not be empty");
+        alert("user must not be empty");
         }
     }
 }
