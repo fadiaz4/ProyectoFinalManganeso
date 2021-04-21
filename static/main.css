@@ -335,7 +335,7 @@ p {
   background: #563434;
 }
 
-/*Featured categories*/
+/*featured categories*/
 
 .categories {
   margin: 70px 0;
@@ -443,7 +443,7 @@ h3 {
 }
 
 select {
-  border: 1px solid #2DC4B4;
+  border: 1px solid  rgba(249, 105, 14, 1);
   padding: 5px;
 }
 
@@ -459,7 +459,7 @@ select:focus {
 
 .page-btn span {
   display: inline-block;
-  border: 1px solid #2DC4B4;
+  border: 1px solid rgba(249, 105, 14, 1);
   margin-left: 10px;
   width: 40px;
   height: 40px;
@@ -469,7 +469,7 @@ select:focus {
 }
 
 .page-btn span:hover {
-  background: #2DC4B4;
+  background:  rgba(249, 105, 14, 1);
   color: #222222;
 }
 
