@@ -43,14 +43,14 @@ function checkLogin() {
                     window.location.href = "https://manganeso.herokuapp.com/dashboard";  
             } else {
                 alert("user or password are not correct");
-            }
-            } else {
+                }
+        } else {
                 alert("password must not be empty");
             }
-        } else {
+    } else {
             alert("user must not be empty");
         }
-    }
+   }
 
 function checkLoginInfo(user, password, userArray) {
     if (userArray !== null && userArray.length > 0) {
