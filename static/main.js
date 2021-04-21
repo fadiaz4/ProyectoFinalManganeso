@@ -55,3 +55,65 @@ function checkLogin() {
         return false;
     }
 }
+
+function getUserRole(pUser, pPassword, pUserArray) {
+    var role = ""
+    if (pUserArray !== null && pUserArray.length > 0) {
+        var length = pUserArray.length
+        for (var i = 0; i < length; i++) {
+            if (pUserArray[i].user === pUser && pUserArray[i].password === pPassword) {
+                role = pUserArray[i].role
+                break
+            }
+        }
+    }
+    return role
+}
+
+function createSessionUser(user, password, role) {
+    var logged_user = {
+        user: user,
+        password: password,
+        role: role
+    };
+
+    sessionStorage.setItem("loggedUser", JSON.stringify(logged_user));
+}
+
+/*
+***** login functionality end
+*/
+
+/*
+*** register functionality begin
+*/
+
+function registerNewUser() {
+    var reg_user = document.getElementById("user_reg").value;
+    var reg_password = document.getElementById("passw_reg").value;
+    var reg_role = "client";
+
+    //alert(reg_user);
+    var userArray = [];
+
+    if (localStorage.getItem("aUserArray") !== null) {
+        userArray = JSON.parse(localStorage.getItem("aUserArray"));
+    }
+
+    var current_reg = {
+        user: reg_user,
+        password: reg_password,
+        role: reg_role
+    };
+
+    userArray.push(current_reg);
+
+    localStorage.setItem("aUserArray", JSON.stringify(userArray));
+
+    //window.location.href = "http://localhost:5000/login"
+    window.location.href = "https://manganeso.herokuapp.com/login";
+}
+
+/*
+*** register functionality end
+*/
