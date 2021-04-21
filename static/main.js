@@ -38,9 +38,9 @@ function checkLogin() {
                 createSessionUser(user, password, role)
                 if (role == "admin") {
                     //window.location.href = "http://localhost:5000/dashboard";
-                    window.location.href = "https://manganeso.herokuapp.com/dashboard";
+                    window.location.href = "https://manganeso.herokuapp.com/dashboardadmin";
                     } else {
-                      window.location.href = "https://manganeso.herokuapp.com/cart";  
+                      window.location.href = "https://manganeso.herokuapp.com/dashboardclient";  
             } else {
                 alert("user or password are not correct");
             }
